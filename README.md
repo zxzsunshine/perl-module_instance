@@ -74,9 +74,9 @@ Name	I/O	Width
 clk_sys	I	1	
 clk_core	I	1	
 rstn_in	i	1	
-rstn_in_sys	I	AXI_AW	
+rstn_in_sys	I	1	
 awid_s	I	1	
-awaddr_s	I	1	
+awaddr_s	I	AXI_AW	
 awlen_s	I	1	
 awsize_s	I	1	
 awburst_s	Io	4	
@@ -87,7 +87,6 @@ awvalid_s	I	1
 awready_s	o	1	
 wid_s	I	1	
 wdata_s	i	1	
-a	O	4	
 b	I	3	last
 end			
 
